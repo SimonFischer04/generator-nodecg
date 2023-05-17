@@ -1,6 +1,6 @@
 {
   "name": "generator-nodecg",
-  "version": "3.0.0",
+  "version": "2.1.0",
   "description": "Yeoman generator for NodeCG bundles",
   "homepage": "http://nodecg.dev",
   "author": {
@@ -8,8 +8,11 @@
     "email": "email@alexvan.camp",
     "url": "http://alexvan.camp"
   },
-  "exports": "./generators",
   "type": "module",
+  "exports": "./generators",
+  "files": [
+    "generators"
+  ],
   "keywords": [
     "yeoman-generator",
     "nodecg",
