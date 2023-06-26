@@ -24,6 +24,70 @@ All notable changes to this project will be documented in this file. See [standa
 
 <a name="1.0.3"></a>
 
+## [3.0.0](https://github.com/SimonFischer04/generator-nodecg/compare/v2.2.1...v3.0.0) (2023-06-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* all deps have been updated
+
+### Features
+
+* add `bower_components` to generated .gitignore ([4477242](https://github.com/SimonFischer04/generator-nodecg/commit/4477242b63db17f3fa35600b1d2a779d62cacc7b)), closes [#6](https://github.com/SimonFischer04/generator-nodecg/issues/6)
+* add helpful information to template files ([0d9af8f](https://github.com/SimonFischer04/generator-nodecg/commit/0d9af8fadbfbe354a5e1e85f9168f163f3cbb7d6))
+* add option to generate bundles in typescript ([#74](https://github.com/SimonFischer04/generator-nodecg/issues/74)) ([de1222c](https://github.com/SimonFischer04/generator-nodecg/commit/de1222cd907a34ae54a2a5720a81dd8a59b2e491))
+* add workspace and fullbleed options ([2292356](https://github.com/SimonFischer04/generator-nodecg/commit/22923566eae914353add5f3e22a1f9371a8a5404))
+* Added clarification on Width units ([#63](https://github.com/SimonFischer04/generator-nodecg/issues/63)) ([56056f4](https://github.com/SimonFischer04/generator-nodecg/commit/56056f44e5b32cc158e356e604963989dfec965b))
+* improve typescript build process; automatically (re)build replicant schemas ([#93](https://github.com/SimonFischer04/generator-nodecg/issues/93)) ([32ed8a9](https://github.com/SimonFischer04/generator-nodecg/commit/32ed8a9b761e693cc5b6f36c0bd702860c850f74))
+* react generators for panels and graphics ([cbbcee9](https://github.com/SimonFischer04/generator-nodecg/commit/cbbcee9455f5e0b944067cb2931bb67b7a2cda2a))
+* simplify bundle naming process ([040b7d2](https://github.com/SimonFischer04/generator-nodecg/commit/040b7d2162bbb540b39751b918f1facf6717b2f5))
+* test building the output bundle; misc other fixes ([d196ac3](https://github.com/SimonFischer04/generator-nodecg/commit/d196ac3dc7933ecd931b163654b47d3e00c58715))
+* **typescript:** add dev script ([762dfe9](https://github.com/SimonFischer04/generator-nodecg/commit/762dfe991df03225525a2a2c035f2ae84085a16b))
+* **typescript:** flesh out the example a bit more ([cfbca1b](https://github.com/SimonFischer04/generator-nodecg/commit/cfbca1b52feae3a6dde3a52c18deb50dec959c25))
+* **typescript:** include example replicant schema ([#75](https://github.com/SimonFischer04/generator-nodecg/issues/75)) ([9aaeced](https://github.com/SimonFischer04/generator-nodecg/commit/9aaeced7a45871d0f627ea74a8c69925969f3848))
+* update deafult compatiableRange to ~0.8.0 ([49fadb9](https://github.com/SimonFischer04/generator-nodecg/commit/49fadb9058433bdf4450dc3ef318bff128ff93f0))
+* update default compatibleRange to ~0.9.0 ([e155e03](https://github.com/SimonFischer04/generator-nodecg/commit/e155e03a6a87d1733494f92d4d23410f8b1637a0))
+* update defaults for nodecg v1.1.1 ([84e869c](https://github.com/SimonFischer04/generator-nodecg/commit/84e869c1713be5460e14073c82cd45c3b8d9c098))
+
+
+### Bug Fixes
+
+* a few small lingering issues ([915b860](https://github.com/SimonFischer04/generator-nodecg/commit/915b8604604b4124afac055c37377d6be59db918))
+* Actually add .idea directory to .gitignore ([a7a3bfe](https://github.com/SimonFischer04/generator-nodecg/commit/a7a3bfe0abc956d0951ca838b199cbf1db95b229))
+* add @nodecg/types as a dev dep for typescript bundles ([294981e](https://github.com/SimonFischer04/generator-nodecg/commit/294981ed82070c1e9932d6364047f7764f64b2d0))
+* **app:** fix github username calculation throwing an error ([037961d](https://github.com/SimonFischer04/generator-nodecg/commit/037961de2a767d0cbcbbbab801e19a647f759fdb))
+* **deps:** update packages to fix vulnerabilities ([#66](https://github.com/SimonFischer04/generator-nodecg/issues/66)) ([a2cb9b6](https://github.com/SimonFischer04/generator-nodecg/commit/a2cb9b6aa5724264f476f8999b5c40ea4dfbd277))
+* edit the correct file :doggolul: ([ae20746](https://github.com/SimonFischer04/generator-nodecg/commit/ae207469a258467383ad6cc2714bc941c43de838))
+* force release-please build ([e2a0044](https://github.com/SimonFischer04/generator-nodecg/commit/e2a00446ea679dc75ba5d924cadb780b2df6a73f))
+* generated gitignore ([477062e](https://github.com/SimonFischer04/generator-nodecg/commit/477062e449cd38297511cceb3f86e61874111565))
+* include tsx files in linting (properly, such that ESLint won't warn about it) ([6c608bb](https://github.com/SimonFischer04/generator-nodecg/commit/6c608bb72f8d6b4899ed6eaf40b6f92c48603ddb))
+* include tsx files in typescript builds ([570902b](https://github.com/SimonFischer04/generator-nodecg/commit/570902b7cb0785b2ffc032519be566a9549b8a6d))
+* make parcel builds actually work ([#89](https://github.com/SimonFischer04/generator-nodecg/issues/89)) ([302b40d](https://github.com/SimonFischer04/generator-nodecg/commit/302b40d30c64c830161b1f3aa69503b9dc2e3301))
+* **package:** update chalk to version 2.0.0 ([#39](https://github.com/SimonFischer04/generator-nodecg/issues/39)) ([7b62f42](https://github.com/SimonFischer04/generator-nodecg/commit/7b62f42a8e447a359fa0076904340bfc676850d9))
+* **package:** update deep-extend to version 0.5.0 ([#37](https://github.com/SimonFischer04/generator-nodecg/issues/37)) ([395781f](https://github.com/SimonFischer04/generator-nodecg/commit/395781f0cbbeab257170d043438f32970bf8b84a))
+* **package:** update generator-node to version 2.0.0 ([#35](https://github.com/SimonFischer04/generator-nodecg/issues/35)) ([7e6d1b0](https://github.com/SimonFischer04/generator-nodecg/commit/7e6d1b03dde30fc1284b15c4af9d35c56290c587))
+* **package:** update github-username to version 4.0.0 ([#36](https://github.com/SimonFischer04/generator-nodecg/issues/36)) ([dc6fd84](https://github.com/SimonFischer04/generator-nodecg/commit/dc6fd8460602aa0870ecf52a2fb6978a6e8040ad))
+* **package:** update parse-author to version 2.0.0 ([#33](https://github.com/SimonFischer04/generator-nodecg/issues/33)) ([dba7798](https://github.com/SimonFischer04/generator-nodecg/commit/dba7798c20833223f8a81def3f333cd1d8ba63e9))
+* **package:** update yosay to version 2.0.0 ([#31](https://github.com/SimonFischer04/generator-nodecg/issues/31)) ([3000b17](https://github.com/SimonFischer04/generator-nodecg/commit/3000b1782d7ca655ada1e9fb4d250a72d379ea25))
+* **panel:** default name should be lowercase ([93f83ba](https://github.com/SimonFischer04/generator-nodecg/commit/93f83bab9acf8ff1c28e1b51af0c952bed850018))
+* **panel:** fix fullbleed and workspace options not actually outputting to package.json ([7c154b7](https://github.com/SimonFischer04/generator-nodecg/commit/7c154b74c143fede44df5f4e0f8058add7c88eb6))
+* **panel:** force name to have length ([5bfa35c](https://github.com/SimonFischer04/generator-nodecg/commit/5bfa35ce7900281fdd2fce67b9399943ce4104ef))
+* **panel:** force title to have length ([dca5efc](https://github.com/SimonFischer04/generator-nodecg/commit/dca5efcbf7895da41536d358f1b99bb7e9e8b15c))
+* **panel:** give default name of "Panel" ([299c8c7](https://github.com/SimonFischer04/generator-nodecg/commit/299c8c7d7da7cd861961197e74705ecb624d94b5))
+* **panel:** i'm a fool ([4cd7727](https://github.com/SimonFischer04/generator-nodecg/commit/4cd7727c1ec3e8da65be38d251d776115d726efb))
+* proper types for example replicant in typescript output ([7f2b72b](https://github.com/SimonFischer04/generator-nodecg/commit/7f2b72b585ffde70ca7dfc7d0c14a62585fe92fb))
+* set default compatibleRange to ^2.0.0 ([8146f64](https://github.com/SimonFischer04/generator-nodecg/commit/8146f6405b2466a6c54ef2e2f90adf52ced567c0))
+* **templates:** slight fixes to typescript template ([1136a62](https://github.com/SimonFischer04/generator-nodecg/commit/1136a622e563bb62eeb6095a44098607e11eb71c))
+* **typescript:** add isolatedModules to tsconfig ([af41c76](https://github.com/SimonFischer04/generator-nodecg/commit/af41c76dedf33c2fb0ccf87babfcfd2badb0f09b))
+* **types:** remove window augment from extension ([619bd48](https://github.com/SimonFischer04/generator-nodecg/commit/619bd48a2c23cb6363fd95819a1067de8702c7b8))
+* use correct scripts for react+typescript ([d92c215](https://github.com/SimonFischer04/generator-nodecg/commit/d92c21547ace5660a23c440fdaa9280a382dfb58))
+* use more specific version ranges for generated typescript bundle dev dependencies ([6111f0e](https://github.com/SimonFischer04/generator-nodecg/commit/6111f0e4949b8998a869358cc21f79fb2d7124cc))
+
+
+### Code Refactoring
+
+* rewrite in typescript, update deps ([8be3266](https://github.com/SimonFischer04/generator-nodecg/commit/8be326611eb41a3ded0733eca10981bc1139e6ed))
+
 ## [2.2.1](https://github.com/nodecg/generator-nodecg/compare/v2.2.0...v2.2.1) (2023-06-20)
 
 
